@@ -13,10 +13,17 @@ This is a draft for the GSoc proposal for godot Organisation working on Command 
 * [Modal-Window](https://en.wikipedia.org/wiki/Modal_window) mentioned doesn't have any close button and can be closed by either `Esc` button or changing the focus to other view.
 * first retrieved search result is selected by default and pressing `return` or `enter` key would execute that command or open that scence or file.
   
-  ### some features
+  ### 1.Some Features
   * use `?` to get available command filters like :
       * `>` for editor commands.
       * `$` search for scenes.
       * `#` search for scripts.
        
   * Example:` $ma ` will search and retrieve all the scene with name containing `ma`.
+  
+  ### 2.Dependencies
+     #### [Modal-Window :](https://en.wikipedia.org/wiki/Modal_window)
+          Should use available GUI to make something like described in Wiki.
+     #### List-View :
+          May be I can use popup-menu but should think of something else.
+  
