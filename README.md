@@ -27,3 +27,5 @@ This is a draft for the GSoc proposal of godot Organisation working on Command p
      #### List-View :
           May be I can use popup-menu but should think of something else.
   
+## Architecture - [might change]
+
