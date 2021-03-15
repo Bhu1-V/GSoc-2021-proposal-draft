@@ -1,5 +1,5 @@
 # GSoc-2021-proposal-draft
-This is a draft for the GSoc proposal for godot Organisation working on Command palette project.
+This is a draft for the GSoc proposal of godot Organisation working on Command palette project. [Just-Project-Stuff.]
 
 ## user scenarios
 * user can search a command from the line-edit in thee command palette.
@@ -9,8 +9,8 @@ This is a draft for the GSoc proposal for godot Organisation working on Command 
 * user can view all the aviable commands with a fuzzy-search result.
 
 ## Presentation and integration
-* user uses a shortcut for command palette `ctrl + shift + p` or `cmd + shift + p` to open a [Modal-Window](https://en.wikipedia.org/wiki/Modal_window), Which has a line-edit to search and list-view that contains fuzzy-search result of the above searched command or file.
-* [Modal-Window](https://en.wikipedia.org/wiki/Modal_window) mentioned doesn't have any close button and can be closed by either `Esc` button or changing the focus to other view.
+* user uses a shortcut for command palette `ctrl + shift + p` or `cmd + shift + p` to open a [Modal-Dialog](https://en.wikipedia.org/wiki/Modal_window), Which has a line-edit to search and list-view that contains fuzzy-search result of the above searched command or file.
+* [Modal-Dialog](https://en.wikipedia.org/wiki/Modal_window) mentioned doesn't have any close button and can be closed by either `Esc` button or changing the focus to other view.
 * first retrieved search result is selected by default and pressing `return` or `enter` key would execute that command or open that scence or file.
   
   ### 1.Some Features
@@ -22,7 +22,7 @@ This is a draft for the GSoc proposal for godot Organisation working on Command 
   * Example:` $ma ` will search and retrieve all the scene with name containing `ma`.
   
   ### 2.Dependencies
-     #### [Modal-Window :](https://en.wikipedia.org/wiki/Modal_window)
+     #### [Modal-Dialog :](https://en.wikipedia.org/wiki/Modal_window)
           Should use available GUI to make something like described in Wiki.
      #### List-View :
           May be I can use popup-menu but should think of something else.
