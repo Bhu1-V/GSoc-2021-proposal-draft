@@ -7,6 +7,7 @@ This is a draft for the GSoc proposal of godot Organisation working on Command p
 * user can view shortcut for a command if available.
 * user can search file or scene.
 * user can view all the aviable commands with a fuzzy-search result.
+* user can change workspace.
 
 ## Presentation and integration
 * user uses a shortcut for command palette `ctrl + shift + p` or `cmd + shift + p` to open a [Modal-Dialog](https://en.wikipedia.org/wiki/Modal_window), Which has a line-edit to search and list-view that contains fuzzy-search result of the above searched command or file.
