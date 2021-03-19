@@ -31,6 +31,7 @@ This is a draft for the GSoc proposal of godot Organisation working on Command p
   
 ## Architecture - [might change]
 
+todo : Add a UML Class image for CommandPalette and EditorAction. Explain the Benfits and how it helps external-Plugin support.
 
 
 ## Visual
