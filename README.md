@@ -39,7 +39,6 @@ Flow :
 ## Visual
  
  Complete Picture:
- // todo : Add an Image of completed Command Palette.
 
  ![cmd-plt-visual](https://user-images.githubusercontent.com/70578657/112499170-3bf98900-8dad-11eb-9550-0708309ca8ed.png)
 
