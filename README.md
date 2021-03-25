@@ -17,8 +17,7 @@ This is a draft for the GSoc proposal of godot Organisation working on Command p
   ### 1.Some Features
   * use `?` to get available command filters like :
       * `>` for editor commands. (Editor Main Menu Settings) 
-      * `$` search for scenes.
-      * `#` search for scripts.
+      * ` ` search for Resources.
    * Example:` $ma ` will search and retrieve all the scene with name containing `ma`.
   
   * Navigate Workspace (2D, 3D, Script, AssetLib).
