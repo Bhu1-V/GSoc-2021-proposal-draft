@@ -37,22 +37,10 @@ Flow :
 
 
 ## Visual
-
- ### LineEdit:
- LineEdit looks Simple no major change.
- // todo: Add line edit image.
- 
- ### List View:
- consists of List Items.
- // todo : Add List box image.
- 
- ### List Item:
- this particular list item contains 3 parts.
- 
- * Name of command of Action or Resource. For Action if it sholds some value like (on or off) it is displayed in a `()` after name.
- * Path of Action or Resource.
- * ShortCut only for Action if available.
- // todo : add image of list item.
  
  Complete Picture:
  // todo : Add an Image of completed Command Palette.
+
+ ![cmd-plt-visual](https://user-images.githubusercontent.com/70578657/112499170-3bf98900-8dad-11eb-9550-0708309ca8ed.png)
+
+ ![complete-cmd-visual](https://user-images.githubusercontent.com/70578657/112501369-32712080-8daf-11eb-9edd-381bbfecf8b2.png)
