@@ -28,7 +28,7 @@ This is a draft for the GSoc proposal of godot Organisation working on Command p
      #### List-View :
           May be I can use popup-menu but should think of something else.
   
-## Architecture - [might change]
+## Architecture 
 
 ![Cmd-plt (1)](https://user-images.githubusercontent.com/70578657/112489501-80345b80-8da4-11eb-8f88-db01d26bccd2.png)
 Flow :
