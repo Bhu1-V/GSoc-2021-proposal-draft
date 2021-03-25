@@ -1,5 +1,5 @@
-# GSoc-2021-proposal-draft
-This is a draft for the GSoc proposal of godot Organisation working on Command palette project. [Just-Project-Stuff.]
+# GSoc-2021-proposal-draft-Project_Stuff_Only.
+This is a draft for the GSoc proposal of godot Organisation working on Command palette project.
 
 ## user scenarios
 * user can search a command from the line-edit in thee command palette.
@@ -30,7 +30,10 @@ This is a draft for the GSoc proposal of godot Organisation working on Command p
   
 ## Architecture - [might change]
 
-todo : Add a UML Class image for CommandPalette and EditorAction. Explain the Benfits and how it helps external-Plugin support.
+![Cmd-plt (1)](https://user-images.githubusercontent.com/70578657/112489501-80345b80-8da4-11eb-8f88-db01d26bccd2.png)
+Flow :
+![cmd-plt-flow](https://user-images.githubusercontent.com/70578657/112496032-6dbd2080-8daa-11eb-8118-2820cf74a83f.png)
+
 
 
 ## Visual
