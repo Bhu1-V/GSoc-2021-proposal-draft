@@ -51,8 +51,11 @@ To Have a Functional Command Palette we need :
   4. Execute the Command once the desired command is selected.
   
       So `execute_command` signal is connected to `EditorNode::_execute_command()` which just calls `EditorAction::_execute_action(selected_command)` and `open_file` signal connects to `EditorNode::_open_file()` which opens file same as `Quick Open Resource`.
+      
+Incomplete but Working ProtoType: 
+![NBYS1r74FW](https://user-images.githubusercontent.com/70578657/112581454-7a7a5c80-8e1c-11eb-98ba-0902c4cc4601.gif)
 
-### 1.
+
 
 ![Cmd-plt (1)](https://user-images.githubusercontent.com/70578657/112489501-80345b80-8da4-11eb-8f88-db01d26bccd2.png)
 Flow :
