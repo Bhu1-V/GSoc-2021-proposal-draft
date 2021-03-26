@@ -29,6 +29,30 @@ This is a draft for the GSoc proposal of godot Organisation working on Command p
           May be I can use popup-menu but should think of something else.
   
 ## Architecture 
+#### Priliminaries :
+  1.Commands / Actions : It is a reference of Callable(Function pointer) that calls some specific function when executed.
+  
+To Have a Functional Command Palette we need :
+
+   1. A Data-Structre to Store Callable and Arguments and Retreive it by some string.
+       
+       A `EditorActions` Class is made and Store actions with a HashMap where String type as Key and Storing a Pair of Callable and Vector<Variant> for arguments (`HashMap<String, Pair<Callable, Vector<Variant>> callables`). but EditorAction has some other big plans [#70](https://github.com/godotengine/godot-proposals/issues/70). So to make a difference between Command Palette actions and other Editor actions we have a `Vector<String> palette_action` which keep track of all Command palette actions. and another Hashmap for shortcuts
+  `HashMap<String, Shortcut>`.
+  
+  2. Register EditorActions.
+    
+      So this can be done in `EditorNode` where most of the Editor code lies. where i call `EditorAction::add_palette_action("action_name", callable_mp(this, func), varray(arg1,arg2..), [Shortcut]);`. 
+  
+  
+  3. We need a way to search and execute for a Command from avaiable commands.
+  
+      A `CommandPalette` Class is made which contains all the UI like line-edit, List-view. when we start searching something if it's start with `>` it will start searching EditorAction commands i.e it will retreive action_names from `EditorActions::palete_actions` otherwise it will just Search for Resource just like `Quick Open Resource`. when Desired action is selected it emits `execute_command` signal or `open_file` in case of resource.
+  
+  4. Execute the Command once the desired command is selected.
+  
+      So `execute_command` signal is connected to `EditorNode::_execute_command()` which just calls `EditorAction::_execute_action(selected_command)` and `open_file` signal connects to `EditorNode::_open_file()` which opens file same as `Quick Open Resource`.
+
+### 1.
 
 ![Cmd-plt (1)](https://user-images.githubusercontent.com/70578657/112489501-80345b80-8da4-11eb-8f88-db01d26bccd2.png)
 Flow :
